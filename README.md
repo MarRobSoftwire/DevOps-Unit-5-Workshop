@@ -25,6 +25,8 @@ If you are missing .NET, you can install it by following the instructions here: 
 sudo apt update && sudo apt install -y dotnet-sdk-8.0
 ```
 
+TEST
+
 ### If you are missing npm
 If you are missing npm, you can install it by following the instructions here: https://docs.npmjs.com/downloading-and-installing-node-js-and-npm - or if you are using an ACG instance, you can run the following command inside it:
 ```bash
@@ -46,4 +48,3 @@ For the morning, you have two choices! You can either build this CI pipeline usi
 In the afternoon we'll be exploring another CI tool/platform, Azure DevOps (ADO). This includes additional tasks not covered in the morning such as setting up our own pipeline runner.
 
 - [Azure DevOps instructions](azure_devops.md)
-
