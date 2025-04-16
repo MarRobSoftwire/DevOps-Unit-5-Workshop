@@ -1,7 +1,7 @@
 # DevOps Unit 5 Workshop
 
 ## Status
-![Build and Test](https://github.com/github/docs/actions/workflows/main.yml/badge.svg)
+![Build and Test](https://github.com/github/docs/actions/workflows/continuous-integration.yml/badge.svg)
 
 Welcome to the Unit 5 Workshop!
 
