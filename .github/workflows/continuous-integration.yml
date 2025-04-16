@@ -24,6 +24,7 @@ jobs:
       with:
         node-version: 'latest'
         cache: 'npm'
+        cache-dependency-path: "DotnetTemplate.Web"
     - name: Setup Node Dependencies
       working-directory: DotnetTemplate.Web
       run: npm ci
