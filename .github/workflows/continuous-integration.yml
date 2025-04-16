@@ -39,6 +39,10 @@ jobs:
         cache: 'npm'
         cache-dependency-path: "DotnetTemplate.Web"
 
+    - name: Install Dependencies
+      working-directory: DotnetTemplate.Web
+      run: npm ci
+
     - name: Lint Node
       working-directory: DotnetTemplate.Web
       run: npm run lint
