@@ -12,21 +12,27 @@ jobs:
       uses: actions/setup-dotnet@v4
       with:
         dotnet-version: 8.0.x
-    - name: Restore dependencies
-      run: dotnet restore
-    - name: Build .NET
-      run: dotnet build --no-restore
-    - name: Test .NET
-      run: dotnet test --no-build --verbosity normal
-      
     - name: Setup Node.js
       uses: actions/setup-node@v4
       with:
         node-version: 'latest'
         cache: 'npm'
         cache-dependency-path: "DotnetTemplate.Web"
+    
+    - name: Restore .NET dependencies
+      run: dotnet restore
     - name: Setup Node Dependencies
       working-directory: DotnetTemplate.Web
       run: npm ci
-    # - run: npm run build --if-present
-    # - run: npm test
+
+    - name: Build .NET
+      run: dotnet build --no-restore
+
+    - name: Test .NET
+      run: dotnet test --no-build --verbosity normal
+    - name: Test Node
+      working-directory: DotnetTemplate.Web
+      run: npm t
+    - name: Lint Node
+      working-directory: DotnetTemplate.Web
+      run: npm run lint
