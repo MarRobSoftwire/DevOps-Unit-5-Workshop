@@ -25,6 +25,10 @@ jobs:
       working-directory: DotnetTemplate.Web
       run: npm ci
 
+    - name: Lint Node
+      working-directory: DotnetTemplate.Web
+      run: npm run lint
+
     - name: Build .NET
       run: dotnet build --no-restore
 
@@ -33,6 +37,3 @@ jobs:
     - name: Test Node
       working-directory: DotnetTemplate.Web
       run: npm t
-    - name: Lint Node
-      working-directory: DotnetTemplate.Web
-      run: npm run lint
