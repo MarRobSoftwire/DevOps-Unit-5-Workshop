@@ -20,11 +20,11 @@ jobs:
       run: dotnet test --no-build --verbosity normal
       
     - name: Setup Node.js
-      working-directory: DotnetTemplate.Web
       uses: actions/setup-node@v4
       with:
         node-version: 'latest'
         cache: 'npm'
+        working-directory: DotnetTemplate.Web
     - name: Setup Node Dependencies
       working-directory: DotnetTemplate.Web
       run: npm ci
