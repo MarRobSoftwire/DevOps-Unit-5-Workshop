@@ -1,5 +1,8 @@
 # DevOps Unit 5 Workshop
 
+## Status
+![Build and Test](https://github.com/github/docs/actions/workflows/main.yml/badge.svg)
+
 Welcome to the Unit 5 Workshop!
 
 ## Our objectives
@@ -46,4 +49,3 @@ For the morning, you have two choices! You can either build this CI pipeline usi
 In the afternoon we'll be exploring another CI tool/platform, Azure DevOps (ADO). This includes additional tasks not covered in the morning such as setting up our own pipeline runner.
 
 - [Azure DevOps instructions](azure_devops.md)
-
